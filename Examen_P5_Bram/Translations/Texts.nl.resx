@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AccountCreate" xml:space="preserve">
+    <value>Nieuwe account</value>
+  </data>
+  <data name="AccountPassword" xml:space="preserve">
+    <value>Wachtwoord</value>
+  </data>
+  <data name="AccountPasswordConfirmation" xml:space="preserve">
+    <value>Bevestig je wachtwoord</value>
+  </data>
+  <data name="AccountPasswordConfirmationError" xml:space="preserve">
+    <value>Het wachtwoord en de bevestiging zijn niet identiek</value>
+  </data>
+  <data name="AccountPasswordError" xml:space="preserve">
+    <value>Het {0} moet tussen  {2} en {1} tekens lang zijn</value>
+  </data>
+  <data name="AccountRememberMe" xml:space="preserve">
+    <value>Me onthouden?</value>
+  </data>
+  <data name="AccountUserName" xml:space="preserve">
+    <value>Gebruiksernaam</value>
+  </data>
+  <data name="AccountUserNameError" xml:space="preserve">
+    <value>De {0} moet tussen  {2} en {1} tekes lang zijn</value>
+  </data>
+  <data name="A_AccountPassword" xml:space="preserve">
+    <value>Wachtwoord</value>
+  </data>
+  <data name="A_BackToList" xml:space="preserve">
+    <value>Terug naar de lijst</value>
+  </data>
+  <data name="A_CreateNew" xml:space="preserve">
+    <value>Maak nieuw</value>
+  </data>
+  <data name="A_Delete" xml:space="preserve">
+    <value>Verwijderen</value>
+  </data>
+  <data name="A_DeleteConfirm" xml:space="preserve">
+    <value>Ben je zeker dat je dit wenst te verwijderen?</value>
+  </data>
+  <data name="A_Description" xml:space="preserve">
+    <value>Beschrijving</value>
+  </data>
+  <data name="A_Details" xml:space="preserve">
+    <value>Details</value>
+  </data>
+  <data name="A_Edit" xml:space="preserve">
+    <value>Wijzigen</value>
+  </data>
+  <data name="A_Email" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="A_EmailConfirmed" xml:space="preserve">
+    <value>E-mail bevestigd?</value>
+  </data>
+  <data name="A_EmailError" xml:space="preserve">
+    <value>Geef een juist e-mailadres</value>
+  </data>
+  <data name="A_FirstName" xml:space="preserve">
+    <value>Voornaam</value>
+  </data>
+  <data name="A_Hello" xml:space="preserve">
+    <value>Hallo </value>
+  </data>
+  <data name="A_Index" xml:space="preserve">
+    <value>Overzicht</value>
+  </data>
+  <data name="A_Language" xml:space="preserve">
+    <value>Taal</value>
+  </data>
+  <data name="A_LastName" xml:space="preserve">
+    <value>Achternaam</value>
+  </data>
+  <data name="A_Leave" xml:space="preserve">
+    <value>Verlaten</value>
+  </data>
+  <data name="A_Login" xml:space="preserve">
+    <value>Aanmelden</value>
+  </data>
+  <data name="A_Logoff" xml:space="preserve">
+    <value>Afmelden</value>
+  </data>
+  <data name="A_Name" xml:space="preserve">
+    <value>Naam</value>
+  </data>
+  <data name="A_PhoneNumber" xml:space="preserve">
+    <value>Telefoonnummer</value>
+  </data>
+  <data name="A_PhoneNumberConfirmed" xml:space="preserve">
+    <value>Telefoonnummer bevestigd ?</value>
+  </data>
+  <data name="A_Register" xml:space="preserve">
+    <value>Registreren</value>
+  </data>
+  <data name="A_Required" xml:space="preserve">
+    <value>Je moet een {0} ingeven</value>
+  </data>
+  <data name="A_Save" xml:space="preserve">
+    <value>Bewaren</value>
+  </data>
+  <data name="B_Flight" xml:space="preserve">
+    <value>Vlucht</value>
+  </data>
+  <data name="B_Name" xml:space="preserve">
+    <value>Naam</value>
+  </data>
+  <data name="Click" xml:space="preserve">
+    <value>Klik</value>
+  </data>
+  <data name="F_Airplane" xml:space="preserve">
+    <value>Vliegtuig</value>
+  </data>
+  <data name="F_AirportFrom" xml:space="preserve">
+    <value>Luchthaven Vertrek</value>
+  </data>
+  <data name="F_AirportTo" xml:space="preserve">
+    <value>Luchthaven Aankomst</value>
+  </data>
+  <data name="HomeAbout" xml:space="preserve">
+    <value>Over ons...</value>
+  </data>
+  <data name="HomeAdministration" xml:space="preserve">
+    <value>Administratie</value>
+  </data>
+  <data name="HomeAppName" xml:space="preserve">
+    <value>Examen Programmeren 5</value>
+  </data>
+  <data name="HomeBooking" xml:space="preserve">
+    <value>Boeking</value>
+  </data>
+  <data name="HomeContact" xml:space="preserve">
+    <value>Contact</value>
+  </data>
+  <data name="HomeFlight" xml:space="preserve">
+    <value>Vluchten</value>
+  </data>
+  <data name="HomeLogin" xml:space="preserve">
+    <value>Aanmelden</value>
+  </data>
+  <data name="HomeLogoff" xml:space="preserve">
+    <value>Afmelden</value>
+  </data>
+  <data name="HomeManagement" xml:space="preserve">
+    <value>Beheer</value>
+  </data>
+  <data name="HomeRegister" xml:space="preserve">
+    <value>Registreren</value>
+  </data>
+  <data name="HomeServices" xml:space="preserve">
+    <value>Diensten</value>
+  </data>
+  <data name="HomeText" xml:space="preserve">
+    <value>Boek je volgende vlucht</value>
+  </data>
+  <data name="HomeTitle" xml:space="preserve">
+    <value>Vluchtboekingen</value>
+  </data>
+  <data name="HomeUsers" xml:space="preserve">
+    <value>Gebruikers</value>
+  </data>
+  <data name="RegisterCreateAccount" xml:space="preserve">
+    <value>Maak een nieuwe gebruiker aan.</value>
+  </data>
+  <data name="User_AccessFailedCount" xml:space="preserve">
+    <value>Aantal van mislukte login-pogingen</value>
+  </data>
+  <data name="User_LockoutEnabled" xml:space="preserve">
+    <value>"Lock Out" toegestaan ?</value>
+  </data>
+  <data name="User_LockoutEndDateUtc" xml:space="preserve">
+    <value>Einde "Lock Out" (utc)</value>
+  </data>
+  <data name="User_ResetPassword" xml:space="preserve">
+    <value>Nieuw wachtwoord</value>
+  </data>
+  <data name="User_TwoFactorEnabled" xml:space="preserve">
+    <value>"2-factor" -aanmelding ?</value>
+  </data>
+</root>

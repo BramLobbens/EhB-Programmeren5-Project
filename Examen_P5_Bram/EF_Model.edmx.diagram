@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="78601d702c104103a5977328dbfc74a7" Name="Diagram1">
+        <EntityTypeShape EntityType="DB_Examen_P5_BramModel.Airline" Width="1.5" PointX="1.5" PointY="8.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_Examen_P5_BramModel.Airplane" Width="1.5" PointX="3.75" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_Examen_P5_BramModel.Airport" Width="1.5" PointX="3.75" PointY="11.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_Examen_P5_BramModel.AspNetRole" Width="1.5" PointX="0.75" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_Examen_P5_BramModel.AspNetUserClaim" Width="1.5" PointX="5.25" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_Examen_P5_BramModel.AspNetUserLogin" Width="1.5" PointX="5.25" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_Examen_P5_BramModel.AspNetUser" Width="1.5" PointX="3" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_Examen_P5_BramModel.Booking" Width="1.5" PointX="8.25" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_Examen_P5_BramModel.Flight" Width="1.5" PointX="6" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_Examen_P5_BramModel.Language" Width="1.5" PointX="0.75" PointY="0.875" IsExpanded="true" />
+        <AssociationConnector Association="DB_Examen_P5_BramModel.FK_dbo_Airplanes_AirlineId" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_Examen_P5_BramModel.FK_dbo_Flights_AirplaneId" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_Examen_P5_BramModel.FK_dbo_Flights_From" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_Examen_P5_BramModel.FK_dbo_Flights_To" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_Examen_P5_BramModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_Examen_P5_BramModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_Examen_P5_BramModel.FK_dbo_AspNetUsers_dbo_Languages_Language_Id" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_Examen_P5_BramModel.FK_dbo_Bookings_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_Examen_P5_BramModel.FK_dbo_Bookings_FlightId" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_Examen_P5_BramModel.AspNetUserRoles" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

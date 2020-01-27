@@ -1,0 +1,30 @@
+﻿@using Examen_P5_Bram.Translations
+@{
+    ViewBag.Title = Texts.HomeAppName;
+}
+
+    <div class="jumbotron">
+        <h1>@Texts.HomeTitle</h1>
+        <p class="lead">@Texts.HomeText</p>
+        <p><a href="@Url.Action("Index", "Bookings")" class="btn btn-primary btn-lg">@Texts.Click &raquo;</a></p>
+    </div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Flights</h2>
+        <p>
+            Placeholder
+        </p>
+        <p><a class="btn btn-default" href="">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Placeholder</h2>
+        <p>Placeholder</p>
+        <p><a class="btn btn-default" href="">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Placeholder</h2>
+        <p>Placeholder</p>
+        <p><a class="btn btn-default" href="">Learn more &raquo;</a></p>
+    </div>
+</div>

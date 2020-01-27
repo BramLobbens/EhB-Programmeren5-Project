@@ -1,0 +1,100 @@
+﻿@using Examen_P5_Bram.Translations
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink(Texts.HomeAppName, "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            @Texts.HomeServices
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>@Html.ActionLink(Texts.HomeBooking, "Index", "Bookings")</li>
+                            <li>@Html.ActionLink(Texts.HomeFlight, "Index", "Flights")</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            @Texts.HomeAdministration
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>@Html.ActionLink(Texts.HomeUsers, "", "")</li>
+                            <li>@Html.ActionLink(Texts.HomeAdministration, "", "")</li>
+                        </ul>
+                    </li>
+                    @if (User.IsInRole("Administrator"))
+                    {
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                @Texts.HomeManagement
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>@Html.ActionLink(Texts.HomeUsers, "Index", "AspNetUsers")</li>
+                            </ul>
+                        </li>
+                    }
+                    <li>@Html.ActionLink(Texts.HomeAbout, "About", "Home")</li>
+                    <li>@Html.ActionLink(Texts.HomeContact, "Contact", "Home")</li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle nav navbar-right"
+                           data-toggle="dropdown"
+                           role="button"
+                           aria-haspopup="true"
+                           aria-expanded="false">
+                            @(((Language)Session["Language"]).Name)
+                        </a>
+                        <ul class="dropdown-menu">
+                            @foreach (var lang in Language.Languages)
+                            {
+                                if (lang.Id != ((Language)Session["Language"]).Id)
+                                {
+                                    <li>
+                                        @Html.ActionLink(lang.Name, "ChangeLanguage", "Home", new { id = lang.Id }, null)
+                                    </li>
+                                }
+                            }
+                        </ul>
+                    </li>
+                </ul>
+                @Html.Partial("_LoginPartial")
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            @{ if (ViewBag.SessieID == null) { ViewBag.SessieID = Session.SessionID; }
+            }
+            <p>&copy; @DateTime.Now.Year - Sessie ID = @Session.SessionID</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
